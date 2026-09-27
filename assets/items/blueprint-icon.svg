@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="blueprint" x1="64" y1="48" x2="174" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#29878A"/>
+      <stop offset=".55" stop-color="#17636F"/>
+      <stop offset="1" stop-color="#103E52"/>
+    </linearGradient>
+    <linearGradient id="roll" x1="66" y1="158" x2="174" y2="185" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#55B9B0"/>
+      <stop offset=".5" stop-color="#247C83"/>
+      <stop offset="1" stop-color="#164C60"/>
+    </linearGradient>
+    <filter id="shadow" x="31" y="29" width="184" height="194" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="plan">
+      <path d="m65 57 86-17 29 17v101l-86 20-29-18V57Z"/>
+    </clipPath>
+  </defs>
+
+  <ellipse cx="121" cy="204" rx="68" ry="12" fill="#000" opacity=".3" filter="url(#shadow)"/>
+
+  <!-- Các tờ bản vẽ xếp lớp -->
+  <path d="m76 64 83-16 25 15v99l-83 19-25-16V64Z"
+        fill="#154A5A" stroke="#0D3547" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m65 57 86-17 29 17v101l-86 20-29-18V57Z"
+        fill="url(#blueprint)" stroke="#0C3D50" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Lưới kỹ thuật -->
+  <g clip-path="url(#plan)" stroke="#9ADCD0" stroke-width="1" opacity=".28">
+    <path d="M72 72h107M72 87h107M72 102h107M72 117h107M72 132h107M72 147h107"/>
+    <path d="M82 45v124M98 45v124M114 45v124M130 45v124M146 45v124M162 45v124"/>
+  </g>
+
+  <!-- Bản vẽ tòa tháp -->
+  <path d="m96 139 27 7 27-13V86l-27-9-27 11v51Z"
+        fill="#0C4C5D" fill-opacity=".5" stroke="#D5F5DC" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m96 88 27 10 27-12M123 98v48M96 105l27 9 27-10M96 123l27 9 27-11"
+        stroke="#BDEBDD" stroke-width="1.7" stroke-linejoin="round"/>
+  <path d="M106 91v43M116 95v42M132 95v43M141 91v43"
+        stroke="#8FD5CC" stroke-width="1.2" stroke-dasharray="3 4"/>
+  <path d="m89 151 70-16M89 157l70-16"
+        stroke="#F3D88D" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="158" cy="70" r="4" fill="#F3D88D"/>
+  <path d="M158 70v20m-4-4 4 4 4-4" stroke="#F3D88D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Cuộn bản vẽ ở mép dưới -->
+  <path d="m69 163 91-21c7-2 13 1 15 7 2 6-1 11-8 13l-90 22c-7 2-13-1-15-7-2-6 0-12 7-14Z"
+        fill="url(#roll)" stroke="#103D4C" stroke-width="2"/>
+  <ellipse cx="68" cy="171" rx="8" ry="10" transform="rotate(-15 68 171)"
+           fill="#7AD0C2" stroke="#174E5B" stroke-width="2"/>
+  <path d="m68 164 7 5-1 10-8 2-5-7 2-8Z"
+        fill="#D5F5DC" fill-opacity=".35" stroke="#D5F5DC" stroke-width="1.3"/>
+  <path d="m82 165 75-18" stroke="#A1E2D5" stroke-width="2" stroke-linecap="round" opacity=".7"/>
+</svg>

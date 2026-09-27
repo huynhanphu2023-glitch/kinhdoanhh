@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="sack" x1="61" y1="76" x2="176" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D9BF87"/>
+      <stop offset=".55" stop-color="#B4935E"/>
+      <stop offset="1" stop-color="#80633F"/>
+    </linearGradient>
+    <linearGradient id="sack-side" x1="145" y1="100" x2="179" y2="174" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A18150"/>
+      <stop offset="1" stop-color="#6D5235"/>
+    </linearGradient>
+    <linearGradient id="bean" x1="-13" y1="-15" x2="16" y2="16" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9683E"/>
+      <stop offset=".5" stop-color="#70412B"/>
+      <stop offset="1" stop-color="#3E281F"/>
+    </linearGradient>
+    <filter id="shadow" x="35" y="42" width="170" height="183" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <clipPath id="sack-opening">
+      <ellipse cx="120" cy="79" rx="51" ry="18"/>
+    </clipPath>
+    <g id="coffee-bean">
+      <path d="M-17-5C-15-16 1-19 11-12c10 7 9 20-1 27-9 6-22 2-27-7-3-5-3-9 0-13Z"
+            fill="url(#bean)" stroke="#432B20" stroke-width="1.5"/>
+      <path d="M-1-14C-5-7 4-4 0 2c-3 5-5 8-2 13"
+            stroke="#D09160" stroke-width="2.4" stroke-linecap="round" opacity=".8"/>
+      <path d="M-11-10c3-3 7-4 11-3"
+            stroke="#E5AD79" stroke-width="1.5" stroke-linecap="round" opacity=".65"/>
+    </g>
+  </defs>
+
+  <!-- Bóng đổ -->
+  <ellipse cx="120" cy="205" rx="66" ry="12" fill="#000" opacity=".3" filter="url(#shadow)"/>
+
+  <!-- Bao cà phê -->
+  <path d="M72 78c13 10 83 10 96 0l10 99c2 15-7 23-22 23H84c-15 0-24-8-22-23l10-99Z"
+        fill="url(#sack)" stroke="#715637" stroke-width="3"/>
+  <path d="M146 87c11-1 18-4 22-9l10 99c2 15-7 23-22 23h-9c10-11 7-23 5-39l-6-74Z"
+        fill="url(#sack-side)" opacity=".72"/>
+
+  <!-- Miệng bao và các hạt -->
+  <ellipse cx="120" cy="79" rx="53" ry="20" fill="#3A261C" stroke="#76593A" stroke-width="3"/>
+  <g clip-path="url(#sack-opening)">
+    <use href="#coffee-bean" transform="translate(84 76) rotate(-25) scale(.82)"/>
+    <use href="#coffee-bean" transform="translate(108 68) rotate(14) scale(.82)"/>
+    <use href="#coffee-bean" transform="translate(135 69) rotate(-15) scale(.82)"/>
+    <use href="#coffee-bean" transform="translate(158 77) rotate(25) scale(.78)"/>
+    <use href="#coffee-bean" transform="translate(96 88) rotate(8) scale(.78)"/>
+    <use href="#coffee-bean" transform="translate(122 88) rotate(-20) scale(.78)"/>
+    <use href="#coffee-bean" transform="translate(146 89) rotate(12) scale(.76)"/>
+  </g>
+  <path d="M68 79c17 15 87 15 104 0"
+        stroke="#D8C08E" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Đường may và sợi bao -->
+  <path d="M75 101c-4 27-7 55-8 77M165 102c4 27 7 55 8 77"
+        stroke="#E3C995" stroke-width="2" stroke-dasharray="4 6" opacity=".75"/>
+
+  <!-- Nhãn bao -->
+  <path d="M83 118h74v52H83z"
+        fill="#183D39" stroke="#E0C98F" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M89 124h62v40H89z"
+        stroke="#A8C8AA" stroke-width="1" stroke-dasharray="2 3" opacity=".8"/>
+  <text x="120" y="140" text-anchor="middle"
+        fill="#E8D6A5" font-family="Arial, sans-serif" font-size="9" letter-spacing="2">
+    APX SELECT
+  </text>
+  <text x="120" y="154" text-anchor="middle"
+        fill="#FFFFFF" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1">
+    ETHIOPIA
+  </text>
+
+  <!-- Nếp gấp trên bao -->
+  <path d="M75 181c20 7 70 8 92 0M86 192c18 4 47 4 66 0"
+        stroke="#E4CC9A" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+</svg>

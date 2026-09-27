@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="crate-front" x1="73" y1="114" x2="122" y2="195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5A85E"/>
+      <stop offset="1" stop-color="#93653D"/>
+    </linearGradient>
+    <linearGradient id="crate-side" x1="122" y1="112" x2="175" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B98149"/>
+      <stop offset="1" stop-color="#704936"/>
+    </linearGradient>
+    <linearGradient id="tile" x1="80" y1="73" x2="119" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DCE8D2"/>
+      <stop offset="1" stop-color="#8BB8A2"/>
+    </linearGradient>
+    <filter id="shadow" x="35" y="35" width="173" height="186" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="121" cy="204" rx="66" ry="12" fill="#000" opacity=".3" filter="url(#shadow)"/>
+
+  <!-- Thân thùng chứa vật liệu -->
+  <path d="m67 105 54 20v70l-54-22v-68Z"
+        fill="url(#crate-front)" stroke="#65462F" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m121 125 53-21v69l-53 22v-70Z"
+        fill="url(#crate-side)" stroke="#65462F" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Các thanh gỗ bên trái -->
+  <path d="m74 101 12-24 48 17-13 24-47-17Z"
+        fill="#C78B4E" stroke="#754B2E" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m82 83 48 17m-53-7 48 17"
+        stroke="#F0C27B" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+
+  <!-- Gạch xây -->
+  <path d="m119 95 24-22 32 12-25 23-31-13Z"
+        fill="#C96E52" stroke="#754438" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m119 95 31 13v16l-31-13V95Z"
+        fill="#9E503F" stroke="#754438" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m150 108 25-23v16l-25 23v-16Z"
+        fill="#A95A45" stroke="#754438" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Tấm gạch ốp màu xanh -->
+  <path d="m78 108 34-17 31 12-34 18-31-13Z"
+        fill="url(#tile)" stroke="#50776C" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m78 108 31 13v13l-31-13v-13Z"
+        fill="#719B8D" stroke="#50776C" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m109 121 34-18v13l-34 18v-13Z"
+        fill="#638A7D" stroke="#50776C" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Viền miệng thùng -->
+  <path d="m67 105 53-22 54 21-53 21-54-20Z"
+        fill="#D7B477" stroke="#694A31" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m78 104 42-16 42 16-42 17-42-17Z"
+        fill="#493C2D" stroke="#8D7048" stroke-width="2" stroke-linejoin="round" opacity=".7"/>
+
+  <!-- Đai kim loại -->
+  <path d="m71 151 46 18v8l-46-18v-8Z" fill="#D8C58E" opacity=".9"/>
+  <path d="m126 170 43-18v8l-43 18v-8Z" fill="#D8C58E" opacity=".75"/>
+  <path d="M73 153v8m39 7v8m20-7v8m34-24v8"
+        stroke="#6E5537" stroke-width="2"/>
+
+  <!-- Nhãn bộ vật liệu -->
+  <path d="m83 135 27 11v23l-27-11v-23Z"
+        fill="#183D39" stroke="#E0C98F" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="96" y="149" text-anchor="middle"
+        fill="#E8D6A5" font-family="Arial, sans-serif" font-size="6" font-weight="700">
+    APX
+  </text>
+  <text x="96" y="158" text-anchor="middle"
+        fill="#FFFFFF" font-family="Arial, sans-serif" font-size="5" letter-spacing=".5">
+    BUILD KIT
+  </text>
+</svg>

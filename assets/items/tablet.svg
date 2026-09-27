@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="case" x1="63" y1="43" x2="179" y2="203" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#52696A"/>
+      <stop offset=".45" stop-color="#263D43"/>
+      <stop offset="1" stop-color="#10252E"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="76" y1="55" x2="164" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#153E48"/>
+      <stop offset="1" stop-color="#0B252F"/>
+    </linearGradient>
+    <linearGradient id="map" x1="90" y1="102" x2="158" y2="156" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#397C70"/>
+      <stop offset="1" stop-color="#214D50"/>
+    </linearGradient>
+    <filter id="shadow" x="34" y="28" width="177" height="194" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="122" cy="205" rx="65" ry="12" fill="#000" opacity=".32" filter="url(#shadow)"/>
+
+  <!-- Cạnh nổi phía sau -->
+  <g transform="rotate(-8 120 120)">
+    <path d="M168 48c7 0 12 5 12 12v126c0 7-5 12-12 12H77c-7 0-12-5-12-12V60c0-7 5-12 12-12h91Z"
+          fill="#0C1C22" stroke="#08151B" stroke-width="4"/>
+    <path d="M69 59c0-8 5-13 13-13h86c8 0 13 5 13 13v119c0 8-5 13-13 13H82c-8 0-13-5-13-13V59Z"
+          fill="url(#case)" stroke="#809091" stroke-width="3"/>
+
+    <!-- Màn hình -->
+    <rect x="79" y="60" width="91" height="137" rx="8"
+          fill="url(#screen)" stroke="#081A20" stroke-width="3"/>
+    <path d="M87 72h75" stroke="#B5D9C5" stroke-width="1.5" opacity=".5"/>
+
+    <!-- Thanh đầu màn hình -->
+    <circle cx="124" cy="69" r="2" fill="#A8C6BB"/>
+    <text x="89" y="88" fill="#E4D49B"
+          font-family="Arial, sans-serif" font-size="7" font-weight="700" letter-spacing="1">
+      APX FIELD
+    </text>
+    <text x="89" y="98" fill="#8DBBB0"
+          font-family="Arial, sans-serif" font-size="6" letter-spacing=".7">
+      CITY OPERATIONS
+    </text>
+
+    <!-- Bản đồ nhỏ -->
+    <path d="M89 107h71v42H89z" fill="url(#map)" stroke="#78A99A" stroke-width="1"/>
+    <path d="M91 140c15-12 20-4 30-17 9-11 21-8 38-20M96 110c8 12 13 18 13 37M143 108c-2 12 4 23 14 34"
+          stroke="#B6D5A7" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+    <path d="M89 124h71M108 107v42M132 107v42"
+          stroke="#D3DDA9" stroke-width="1" stroke-dasharray="3 4" opacity=".5"/>
+    <circle cx="126" cy="124" r="4" fill="#F1C76E" stroke="#FFF0BE" stroke-width="1.5"/>
+
+    <!-- Bảng dữ liệu -->
+    <path d="M89 158h71v26H89z" fill="#183942" stroke="#42636A" stroke-width="1"/>
+    <path d="M96 177v-8h6v8m5 0v-13h6v13m5 0v-10h6v10"
+          fill="#62C2A2" opacity=".9"/>
+    <path d="M137 165h16m-16 5h12m-12 5h14"
+          stroke="#C7D8C0" stroke-width="1.5" stroke-linecap="round" opacity=".8"/>
+
+    <!-- Nút bấm bên cạnh -->
+    <path d="M181 91v15" stroke="#D1B96F" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="181" cy="119" r="2.5" fill="#79C9B4"/>
+    <path d="M80 52h76" stroke="#D8E1D4" stroke-width="1.5" stroke-linecap="round" opacity=".45"/>
+  </g>
+</svg>

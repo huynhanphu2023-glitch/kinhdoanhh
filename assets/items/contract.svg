@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="66" y1="47" x2="174" y2="194" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9E9"/>
+      <stop offset=".55" stop-color="#E8DDBF"/>
+      <stop offset="1" stop-color="#CBB98F"/>
+    </linearGradient>
+    <linearGradient id="paper-edge" x1="162" y1="70" x2="181" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D5C49C"/>
+      <stop offset="1" stop-color="#8E7A57"/>
+    </linearGradient>
+    <linearGradient id="clip" x1="94" y1="36" x2="151" y2="51" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9D38F"/>
+      <stop offset=".5" stop-color="#A98742"/>
+      <stop offset="1" stop-color="#F5E5B5"/>
+    </linearGradient>
+    <linearGradient id="seal" x1="137" y1="143" x2="175" y2="185" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F07C65"/>
+      <stop offset=".55" stop-color="#B9433D"/>
+      <stop offset="1" stop-color="#762B32"/>
+    </linearGradient>
+    <filter id="shadow" x="35" y="30" width="176" height="194" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Bóng đổ -->
+  <ellipse cx="122" cy="205" rx="68" ry="12" fill="#000" opacity=".3" filter="url(#shadow)"/>
+
+  <!-- Tập giấy phía sau -->
+  <path d="M76 57h83l19 19v106c0 5-4 9-9 9H76c-5 0-9-4-9-9V66c0-5 4-9 9-9Z"
+        fill="#BDAA7D" stroke="#796744" stroke-width="3"/>
+  <path d="M159 57v17c0 3 2 5 5 5h14"
+        stroke="#E8D9B5" stroke-width="2" opacity=".8"/>
+
+  <!-- Tờ hợp đồng chính -->
+  <path d="M72 45h78l29 29v112c0 5-4 9-9 9H72c-5 0-9-4-9-9V54c0-5 4-9 9-9Z"
+        fill="url(#paper)" stroke="#786644" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Cạnh gấp tạo chiều sâu -->
+  <path d="M150 45v22c0 5 4 8 9 8h20L150 45Z"
+        fill="#D7C69D" stroke="#8E7B55" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M150 45v22c0 5 4 8 9 8h20"
+        stroke="#FFF8E7" stroke-width="2" opacity=".8"/>
+
+  <!-- Kẹp hồ sơ kim loại -->
+  <path d="M99 39c0-4 3-7 7-7h35c4 0 7 3 7 7v9h-49v-9Z"
+        fill="url(#clip)" stroke="#78623A" stroke-width="2"/>
+  <path d="M108 39h31" stroke="#FFF3C9" stroke-width="2" stroke-linecap="round" opacity=".85"/>
+  <path d="M104 48v5h39v-5" stroke="#90743D" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Tiêu đề -->
+  <text x="83" y="91" fill="#1D4945"
+        font-family="Arial, sans-serif" font-size="9" font-weight="700" letter-spacing="1.5">
+    APX BUSINESS WORLD
+  </text>
+  <path d="M82 99h76" stroke="#B99B59" stroke-width="2"/>
+  <text x="83" y="116" fill="#263A36"
+        font-family="Arial, sans-serif" font-size="12" font-weight="700">
+    HỢP ĐỒNG THUÊ
+  </text>
+  <text x="83" y="132" fill="#263A36"
+        font-family="Arial, sans-serif" font-size="12" font-weight="700">
+    MẶT BẰNG
+  </text>
+
+  <!-- Nội dung văn bản -->
+  <path d="M83 144h65M83 152h55M83 160h61"
+        stroke="#8C846F" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+  <path d="M83 170h38"
+        stroke="#8C846F" stroke-width="2" stroke-linecap="round" opacity=".65"/>
+
+  <!-- Chữ ký -->
+  <path d="M85 184c7-9 8 5 14-2 3-4 4-1 7 0"
+        stroke="#28615B" stroke-width="2" stroke-linecap="round"/>
+  <path d="M83 189h43" stroke="#817457" stroke-width="1.5"/>
+
+  <!-- Dấu sáp niêm phong -->
+  <circle cx="157" cy="163" r="21" fill="#6B292C" opacity=".2"/>
+  <path d="M157 140c4 0 6 3 9 4 4 1 8 0 10 4 2 3 0 7 1 11 2 4 5 6 3 10-1 4-5 5-7 9-2 3-2 7-6 9-4 1-7-2-11-2-4 0-7 3-11 1-4-2-4-6-7-9-3-3-7-4-8-8-1-4 2-7 2-11 0-4-2-7 1-10 2-4 7-3 10-5 4-1 7-3 11-3Z"
+        fill="url(#seal)" stroke="#7A3034" stroke-width="2"/>
+  <circle cx="157" cy="163" r="13" stroke="#F6B09A" stroke-width="1.5" opacity=".8"/>
+  <path d="M151 163l4 4 8-9"
+        stroke="#FFE1C7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M145 151c3-3 6-4 9-4"
+        stroke="#FFB99C" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+</svg>

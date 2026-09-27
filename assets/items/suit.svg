@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" fill="none">
+  <defs>
+    <linearGradient id="coat" x1="67" y1="54" x2="177" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E5C878"/>
+      <stop offset=".48" stop-color="#B99045"/>
+      <stop offset="1" stop-color="#80602E"/>
+    </linearGradient>
+    <linearGradient id="lapel" x1="91" y1="72" x2="124" y2="145" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5E3A6"/>
+      <stop offset="1" stop-color="#C7A95E"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="119" y1="70" x2="122" y2="157" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F5E9"/>
+      <stop offset="1" stop-color="#C9D9D1"/>
+    </linearGradient>
+    <linearGradient id="sleeve" x1="53" y1="104" x2="91" y2="183" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D7B864"/>
+      <stop offset="1" stop-color="#98763A"/>
+    </linearGradient>
+    <filter id="shadow" x="30" y="38" width="181" height="190" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <!-- Bóng đổ -->
+  <ellipse cx="121" cy="205" rx="72" ry="13" fill="#000" opacity=".28" filter="url(#shadow)"/>
+
+  <!-- Móc treo -->
+  <path d="M119 44c0-9 7-15 15-15 7 0 12 5 12 11 0 7-6 10-13 14"
+        stroke="#D7C58C" stroke-width="5" stroke-linecap="round"/>
+  <path d="M105 62 127 49l23 13-23 13-22-13Z"
+        fill="#D8C58A" stroke="#9E884F" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Thân áo -->
+  <path d="m105 66-22 8-22 17-13 66 22 9-4 25c-1 7 4 12 11 12h86c7 0 12-5 11-12l-4-25 22-9-13-66-22-17-22-8-13 15-17-15Z"
+        fill="url(#coat)" stroke="#6F572D" stroke-width="4" stroke-linejoin="round"/>
+
+  <!-- Tay áo tạo khối -->
+  <path d="m61 92-13 65 22 9 20-53-13-31-16 10Z"
+        fill="url(#sleeve)" stroke="#765B2D" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m176 92 13 65-22 9-20-53 13-31 16 10Z"
+        fill="#A9853E" stroke="#765B2D" stroke-width="3" stroke-linejoin="round"/>
+
+  <!-- Áo sơ mi bên trong -->
+  <path d="m105 67 22 17 22-17-7 80h-30l-7-80Z"
+        fill="url(#shirt)" stroke="#B8BBA9" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Ve áo trái và phải -->
+  <path d="m105 67 22 17-13 28-18-31 9-14Z"
+        fill="url(#lapel)" stroke="#92763D" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m149 67-22 17 13 28 18-31-9-14Z"
+        fill="#D7BE78" stroke="#92763D" stroke-width="2" stroke-linejoin="round"/>
+
+  <!-- Nẹp áo -->
+  <path d="M127 84v93" stroke="#72572D" stroke-width="3" opacity=".8"/>
+
+  <!-- Cúc áo -->
+  <circle cx="137" cy="130" r="3.5" fill="#F5E3A6"/>
+  <circle cx="137" cy="151" r="3.5" fill="#F5E3A6"/>
+  <circle cx="137" cy="172" r="3.5" fill="#F5E3A6"/>
+
+  <!-- Túi áo -->
+  <path d="m147 140 19-3-2 18-17 3v-18Z"
+        fill="#9C793A" stroke="#73592F" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m148 140 18-3" stroke="#F0D994" stroke-width="2"/>
+
+  <!-- Điểm sáng trên vai -->
+  <path d="m81 91 17-13" stroke="#F8E5A4" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+  <path d="m158 78 17 13" stroke="#F8E5A4" stroke-width="3" stroke-linecap="round" opacity=".45"/>
+</svg>
